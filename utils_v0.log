@@ -3,3 +3,14 @@
 [INFO] TrainerAgent.onGameEnd: After 2 phase(s), avg trajectory utility = 4.997334662010915E-4
 [INFO] TrainerAgent.onGameEnd: After 3 phase(s), avg trajectory utility = 4.997370358990959E-4
 [INFO] TrainerAgent.onGameEnd: After 4 phase(s), avg trajectory utility = 4.997337360951382E-4
+[INFO] TrainerAgent.onGameEnd: After 5 phase(s), avg trajectory utility = 4.997350558099274E-4
+[INFO] TrainerAgent.onGameEnd: After 6 phase(s), avg trajectory utility = 4.997363566991575E-4
+[INFO] TrainerAgent.onGameEnd: After 7 phase(s), avg trajectory utility = 4.997366467141613E-4
+[INFO] TrainerAgent.onGameEnd: After 8 phase(s), avg trajectory utility = 4.997366958440552E-4
+[INFO] TrainerAgent.onGameEnd: After 9 phase(s), avg trajectory utility = 4.997349862841593E-4
+[INFO] TrainerAgent.onGameEnd: After 10 phase(s), avg trajectory utility = 4.997378562771009E-4
+[INFO] TrainerAgent.onGameEnd: After 11 phase(s), avg trajectory utility = 4.997345058941004E-4
+[INFO] TrainerAgent.onGameEnd: After 12 phase(s), avg trajectory utility = 4.997361962780525E-4
+[INFO] TrainerAgent.onGameEnd: After 13 phase(s), avg trajectory utility = 4.997357663181226E-4
+[INFO] TrainerAgent.onGameEnd: After 14 phase(s), avg trajectory utility = 4.997373256889908E-4
+[INFO] TrainerAgent.onGameEnd: After 15 phase(s), avg trajectory utility = 4.997357056589992E-4
