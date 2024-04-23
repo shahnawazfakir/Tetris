@@ -354,7 +354,7 @@ public class TetrisQAgent
         // initially assing score of this turn to reward
         double reward = game.getScoreThisTurn() * 1000; //times 1000 becasue we want to highly reward getting a score, since achieving a score is rare
         Board board = game.getBoard();
-        int maxAllowedHeight = 18;
+        int maxAllowedHeight = 10;
 
         int[] columnHeights = new int[board.NUM_COLS]; // Array to store column heights
     
@@ -373,9 +373,12 @@ public class TetrisQAgent
             columnHeights[col] = height;
         }
 
+        // Reinforcement 0: For being alive
+        reward += 5.0;
+
         // Reinforcement 1: Penalize for higher stack of minos
         for (int height : columnHeights) {
-            reward -= 0.1 * height; // Penalize for each block height in a column
+            reward -= 5.0 * height; // Penalize for each block height in a column
         }
 
         // Reinforcement 2: Penalize for height variance across columns to encourage a flatter board
@@ -383,7 +386,7 @@ public class TetrisQAgent
         int maxHeight = Arrays.stream(columnHeights).max().orElse(-1);
         int minHeight = Arrays.stream(columnHeights).min().orElse(-1);
         int heightVariance = maxHeight - minHeight;
-        reward -= 0.5 * heightVariance; // can tweak the weight as needed. 
+        reward -= 10.0 * heightVariance; // can tweak the weight as needed. 
 
         // Reinforcement 3: Penalty for exceeding the maximum stack height
         // Calculate the overall stack height using columnHeights
@@ -393,7 +396,7 @@ public class TetrisQAgent
         }
         if (maxColumnHeight > maxAllowedHeight){
             //System.out.println("MAX HEIGHT EXCEEDED");
-            reward -= 100.0;
+            reward -= 1000.0;
         }
 
         // Reinforcement 4: encourage line clears since they earn points
@@ -403,7 +406,7 @@ public class TetrisQAgent
             reward += 1000;
         }
         else {
-            reward += linesCleared * 100; 
+            reward += linesCleared * 200; 
         }
 
         // Reinforcement 5: Penalize for enclosed spaces (holes)
@@ -429,18 +432,18 @@ public class TetrisQAgent
             }
 
             if (enclosedSpace) {
-                reward -= 50.0; // Penalize for enclosed spaces
+                reward -= 100.0; // Penalize for enclosed spaces
             }
         }
        
         // bonus for staying alive, penalize for game over
-        if (game.didAgentLose()){
-            reward -= 5.0; 
-            System.out.println("agent lost? "+ game.didAgentLose());
-        }
-        else{
-            reward += 5.0;
-        }
+        // if (game.didAgentLose()){
+        //     reward -= 5.0; 
+        //     System.out.println("agent lost? "+ game.didAgentLose());
+        // }
+        // else{
+        //     reward += 5.0;
+        // }
 
         return reward;
     }
