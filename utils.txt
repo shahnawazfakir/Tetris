@@ -1,2 +1,6 @@
 [INFO] TrainerAgent.initialize: creating replay buffer of size [1000000]
-[INFO] TrainerAgent.onGameEnd: After 1 phase(s), avg trajectory utility = 5.000386335988485E-4
+[INFO] TrainerAgent.onGameEnd: After 1 phase(s), avg trajectory utility = 5.000386004743758E-4
+[INFO] TrainerAgent.onGameEnd: After 2 phase(s), avg trajectory utility = 5.000384957791367E-4
+[INFO] TrainerAgent.onGameEnd: After 3 phase(s), avg trajectory utility = 5.000386109885984E-4
+[INFO] TrainerAgent.onGameEnd: After 4 phase(s), avg trajectory utility = 5.000384978183703E-4
+[INFO] TrainerAgent.onGameEnd: After 5 phase(s), avg trajectory utility = 5.000385345519788E-4
