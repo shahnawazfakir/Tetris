@@ -76,3 +76,7 @@
 [INFO] TrainerAgent.onGameEnd: After 75 phase(s), avg trajectory utility = 4.997380065349197E-4
 [INFO] TrainerAgent.onGameEnd: After 76 phase(s), avg trajectory utility = 4.997378362811427E-4
 [INFO] TrainerAgent.onGameEnd: After 77 phase(s), avg trajectory utility = 4.997371963652273E-4
+[INFO] TrainerAgent.onGameEnd: After 78 phase(s), avg trajectory utility = 4.99734296224105E-4
+[INFO] TrainerAgent.onGameEnd: After 79 phase(s), avg trajectory utility = 4.997387654910041E-4
+[INFO] TrainerAgent.onGameEnd: After 80 phase(s), avg trajectory utility = 4.997369766091073E-4
+[INFO] TrainerAgent.onGameEnd: After 81 phase(s), avg trajectory utility = 4.99734925903064E-4
